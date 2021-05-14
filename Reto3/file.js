@@ -26,10 +26,10 @@ function Calcular(){
         //recorrer la matriz y sumar las diagonales
         matriz.forEach(element => {
             //izquierda
-            diagonalIzquierda += element[izquierda];
+            diagonalIzquierda += parseInt(element[izquierda]);
             izquierda++;
             //derecha
-            diagonalDerecha += element[derecha];
+            diagonalDerecha += parseInt(element[derecha]);
             derecha--;
         });
         document.write(`La matriz ${matriz}`);
